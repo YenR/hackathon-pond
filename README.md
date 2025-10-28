@@ -3,6 +3,7 @@
 ## Prerequisites
 
 1. **Unity 6.0**  (https://unity.com/download)
+   - (alternatively, unzip and run the windows build)
 2. **LM Studio** ([https://lmstudio.ai](https://lmstudio.ai))  
 3. A downloaded model in LM Studio: **gemma-3-4b**
    - Open LM Studio’s **Discover** tab, find Gemma 3 4B, click **Download**
