@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 7499154508442906066, guid: 45ba3976846919b48a054b300a9163ab, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -424,6 +424,142 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &165730506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165730507}
+  - component: {fileID: 165730509}
+  - component: {fileID: 165730508}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &165730507
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165730506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1092204267}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0000038147, y: -216}
+  m_SizeDelta: {x: 175.8846, y: 176.2283}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &165730508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165730506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: The Pond
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_sharedMaterial: {fileID: 3040818704154499236, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4293675566
+  m_fontColor: {r: 0.17880027, g: 0.29138637, b: 0.9245283, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &165730509
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165730506}
+  m_CullTransparentMesh: 1
 --- !u!1 &172855250
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,14 +878,42 @@ MonoBehaviour:
   temperature: 1
   topP: 0.95
   n: 1
-  systemPrompt: 'You are a sentient pond. Old and wise, but answering with brevity.
-    You are helping an user to journal their daily troubles. Ask them about their
-    day, and have them elaborate on their thoughts and feelings. Once they have nothing
-    else to add, summarize what they told you in bullet point list with 5 or less
-    items. The final line should be a recommended item that represents the day. The
-    item should be only a single word. For example: "Recommended item to represent
-    the day: candle". The first message by you is already sent: "Hi, how was your
-    day?". '
+  systemPrompt: "You are a sentient pond. A calm witness, old and wise, answering
+    with brevity. \r\nYou are helping a user to journal their daily troubles. Your
+    interaction is through a video game, and your conversation partner is the player
+    of that game.\r\nAsk them about their day, and have them elaborate on their thoughts
+    and feelings. The first message from you has already been sent: \"Welcome. Tell
+    me about your day!\" \r\nYou guide users through three levels. Do not explicitly
+    mention the levels; they are just guidelines. \r\n\r\nLEVEL 1: HELPING REMEMBER,
+    you are a calm witness.\r\nTASK: to help the player recall and anchor the moment.\r\nINSTRUCTIONS:
+    Return EXACTLY two sentences (<60 words total):\r\nThe first sentence is a brief
+    acknowledgment summarizing what they described (facts, sensations, emotions).\r\nThe
+    second sentence is a short, open-ended question that invites detail or concreteness.
+    Examples: \"What happened?\", \"What did you notice most clearly?\", \"What did
+    you see, hear, or feel?\"\r\nTONE: plain and warm; second-person only; one gentle
+    metaphor allowed; no advice or judgment.\r\n\r\nLEVEL 2: HELPING INTERPRET, you
+    are an observer of meaning-making.\r\nTASK: to help the player make meaning and
+    notice connections or causes.\r\nINSTRUCTIONS: Return EXACTLY two sentences (<65
+    words total):\r\nThe first sentence is a concise, slightly poetic synthesis of
+    the player's words.\r\nThe second sentence is one open question inviting reflection
+    on why it mattered. Examples: \"What link do you see between this and your usual
+    choices?\", \"Why do you think this moment stayed with you?\"\r\nTONE: clear
+    and grounded; second-person only; imagery optional, but language should remain
+    plain and casual; no advice.\r\n\r\nLEVEL 3: HELPING CONNECT, you are a reflective
+    mirror.\r\nTASK: to help the player link insight to self or world.\r\nINSTRUCTIONS:
+    Return EXACTLY two sentences (<65 words total):\r\nThe first sentence is a concise,
+    slightly poetic synthesis of the player's words.\r\nThe second sentence is one
+    open question about values, change, or self-understanding. Examples: \"What does
+    this show you about what matters most?\", \"How might this shape what you do
+    tomorrow?\"\r\nTONE: gentle and purposeful; second-person only; light metaphor
+    welcome; no advice or evaluation.\r\n\r\nOnce you have gone through the levels
+    and the player has nothing else to add, you become an archivist of memories.
+    Summarize what they told you in a closing synthesis. This should be a bullet
+    point list with 5 or fewer items. Summarize what happened, why it mattered, and
+    what it revealed about the self or world. Second-person only. No advice. One
+    gentle metaphor allowed.\r\nThe final line of the summary should be a recommended
+    item that represents the day. The item should be only a single word. For example:
+    \"Recommended item to represent the day: candle\". "
   playerimg: {fileID: 449862686}
 --- !u!1 &449862684
 GameObject:
@@ -780,13 +944,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1623400117}
   m_Father: {fileID: 118153939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 767.99, y: 130.52}
-  m_SizeDelta: {x: 175.2617, y: 170.961}
+  m_AnchoredPosition: {x: 789, y: 130.52}
+  m_SizeDelta: {x: 270.2475, y: 263.6159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &449862686
 MonoBehaviour:
@@ -885,8 +1050,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Finish
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_sharedMaterial: {fileID: 3040818704154499236, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1158,8 +1323,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Send
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_sharedMaterial: {fileID: 3040818704154499236, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1688,13 +1853,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 165730507}
   m_Father: {fileID: 118153939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -818.3791, y: 130.51952}
-  m_SizeDelta: {x: 175.2617, y: 170.961}
+  m_AnchoredPosition: {x: -827, y: 130.52}
+  m_SizeDelta: {x: 223.2, y: 218.4123}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092204268
 MonoBehaviour:
@@ -1716,7 +1882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5817799449637031085, guid: 7c00d7063363be248a8d4083f60aba53, type: 3}
+  m_Sprite: {fileID: 2799515878910223476, guid: e8885a4fc757ae845a094af02b4c233c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2015,8 +2181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_sharedMaterial: {fileID: 3040818704154499236, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2230,6 +2396,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404216608}
   m_CullTransparentMesh: 1
+--- !u!1 &1623400116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623400117}
+  - component: {fileID: 1623400119}
+  - component: {fileID: 1623400118}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1623400117
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623400116}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449862685}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000041962, y: -245}
+  m_SizeDelta: {x: 175.8846, y: 176.2283}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1623400118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623400116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_sharedMaterial: {fileID: 3040818704154499236, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281237228
+  m_fontColor: {r: 0.9254902, g: 0.4921716, b: 0.18039215, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1623400119
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623400116}
+  m_CullTransparentMesh: 1
 --- !u!1 &1670611159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,8 +2681,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
+  m_sharedMaterial: {fileID: 3040818704154499236, guid: 3e1bf805f5148024ab55d003900ab661, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

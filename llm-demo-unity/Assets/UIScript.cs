@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+using System;
 using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour
@@ -38,6 +39,8 @@ public class UIScript : MonoBehaviour
         selected.glow.SetActive(false);
 
         selected.info = LmStudioChatUI.result;
+
+        selected.id = DateTime.Now.ToString("yyyyMMdd-HHmmssfff");
     }
 
     public void onPressUp()
@@ -46,12 +49,19 @@ public class UIScript : MonoBehaviour
             return;
 
         selected.up();
+        selected.save();
     }
 
     public void onPressDelete()
     {
         if (selected != null)
-            Destroy(selected.gameObject);
+        {
+            DraggableInsideCircle.ItemStorage.DeleteItem(selected.id);
+
+            Destroy(selected.gameObject, 0.1f);
+
+            hideUI();
+        }
     }
 
     public GameObject infopane;
@@ -73,6 +83,7 @@ public class UIScript : MonoBehaviour
             return;
 
         selected.sink();
+        selected.save();
     }
 
     void Start()

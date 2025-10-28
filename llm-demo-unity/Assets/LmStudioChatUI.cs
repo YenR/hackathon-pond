@@ -34,7 +34,7 @@ public class LmStudioChatUI : MonoBehaviour
     private List<(string role, string content)> history = new List<(string role, string content)>();
 
     // Initial system instruction
-    [TextArea(2, 5)]
+    [TextArea(2, 20)]
     public string systemPrompt = "You are a concise assistant that replies in the exact format requested.";
 
     void Start()
@@ -54,7 +54,7 @@ public class LmStudioChatUI : MonoBehaviour
         if (ComfyImageCtr.avatarSprite != null)
             playerimg.sprite = ComfyImageCtr.avatarSprite;
 
-        AddMessageToUI("system", "Hi, how was your day?");
+        AddMessageToUI("system", "Welcome. Tell me about your day!");
     }
 
     public Image playerimg;

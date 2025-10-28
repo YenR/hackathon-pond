@@ -19,6 +19,9 @@ public class closeScript : MonoBehaviour
 
         if (UIScript.instance != null && UIScript.instance.cam != null)
             UIScript.instance.cam.gameObject.SetActive(true);
+
+        if (UIScript.instance != null && UIScript.instance.selected != null)
+            UIScript.instance.selected.save();
     }
 
     public void onClickStartGame()
