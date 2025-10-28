@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using TMPro;
 using Newtonsoft.Json.Linq;
+using UnityEngine.SceneManagement;
 
 public class LmStudioChatUI : MonoBehaviour
 {
@@ -49,7 +50,32 @@ public class LmStudioChatUI : MonoBehaviour
         // and that Submit is handled by our script via keyboard logic below.
         if (inputField != null)
             inputField.lineType = TMP_InputField.LineType.MultiLineNewline;
+
+        if (ComfyImageCtr.avatarSprite != null)
+            playerimg.sprite = ComfyImageCtr.avatarSprite;
+
+        AddMessageToUI("system", "Hi, how was your day?");
     }
+
+    public Image playerimg;
+
+    public void onPressFinished()
+    {
+        Scene newScene = SceneManager.GetSceneByName("Dialogue");
+        if (newScene.isLoaded)
+        {
+            SceneManager.UnloadSceneAsync(newScene);
+        }
+
+        SceneManager.LoadScene("imgGen", LoadSceneMode.Additive);
+
+        //if (UIScript.instance != null && UIScript.instance.cam != null)
+         //   UIScript.instance.cam.gameObject.SetActive(true);
+
+    }
+
+    public static string result;
+
 
     void Update()
     {
@@ -316,6 +342,8 @@ public class LmStudioChatUI : MonoBehaviour
         }
         else
         {
+            result = text;
+
             // Mirror bubble horizontally
             if (bgTransform != null) bgTransform.localScale = new Vector3(-1f, 1f, 1f);
             // Keep text readable by flipping text back
@@ -342,8 +370,8 @@ public class LmStudioChatUI : MonoBehaviour
         var bgImg = bgTransform != null ? bgTransform.GetComponent<Image>() : inst.GetComponentInChildren<Image>();
         if (bgImg != null)
         {
-            if (role == "user") bgImg.color = new Color(0.2f, 0.6f, 1.0f, 0.15f);
-            else bgImg.color = new Color(0.95f, 0.95f, 0.95f, 0.9f);
+            if (role == "user") bgImg.color = new Color(0.9f, 0.9f, 0.75f, 1f);
+            else bgImg.color = new Color(0.95f, 0.95f, 0.95f, 1f);
         }
 
         // Force immediate rebuild and then finalize layout on next frame to avoid overlap/truncation

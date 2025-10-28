@@ -21,7 +21,7 @@ public class UIScript : MonoBehaviour
 
     public void onPressNewMemory()
     {
-        SceneManager.LoadScene("imgGen", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Dialogue", LoadSceneMode.Additive);
 
         if (memoryCanvas.instance != null)
             memoryCanvas.instance.spawnNewMemory();
@@ -36,6 +36,8 @@ public class UIScript : MonoBehaviour
 
         selected.gameObject.GetComponent<Image>().sprite = s;
         selected.glow.SetActive(false);
+
+        selected.info = LmStudioChatUI.result;
     }
 
     public void onPressUp()
@@ -44,6 +46,25 @@ public class UIScript : MonoBehaviour
             return;
 
         selected.up();
+    }
+
+    public void onPressDelete()
+    {
+        if (selected != null)
+            Destroy(selected.gameObject);
+    }
+
+    public GameObject infopane;
+    public TMPro.TMP_Text info;
+
+    public void onPressRead()
+    {
+        if (selected == null)
+            return;
+
+        infopane.SetActive(true);
+
+        info.SetText(selected.info);
     }
 
     public void onPressDown()

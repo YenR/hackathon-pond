@@ -16,7 +16,8 @@ public class closeScript : MonoBehaviour
             SceneManager.UnloadSceneAsync(newScene);
         }
 
-        if(UIScript.instance != null && UIScript.instance.cam != null)
+
+        if (UIScript.instance != null && UIScript.instance.cam != null)
             UIScript.instance.cam.gameObject.SetActive(true);
     }
 

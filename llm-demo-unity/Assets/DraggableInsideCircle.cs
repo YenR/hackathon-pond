@@ -17,6 +17,8 @@ public class DraggableInsideCircle : MonoBehaviour, IDragHandler, IBeginDragHand
 
     public Image img;
 
+    public string info;
+
     public void onEnterCursor()
     {
 

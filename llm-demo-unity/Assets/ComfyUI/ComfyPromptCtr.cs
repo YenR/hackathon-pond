@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 [System.Serializable]
 public class ResponseData
@@ -20,7 +22,14 @@ public class ComfyPromptCtr : MonoBehaviour
     public TMPro.TMP_InputField pInput;
     private void Start()
     {
-       // QueuePrompt("pretty man","watermark");
+        // QueuePrompt("pretty man","watermark");
+
+        if (LmStudioChatUI.result != null && LmStudioChatUI.result != "")
+        {
+            string lastWord = Regex.Replace(LmStudioChatUI.result.Trim(), @"[^\w]+$", ""); // remove punctuation at the end
+            lastWord = lastWord.Split(' ').Last(); // take the last space-separated word
+            pInput.text = lastWord;
+        }
     }
 
     public void QueuePrompt()
