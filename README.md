@@ -32,9 +32,8 @@
 - [Kenney's roguelike RPG Pack](https://kenney.nl/assets/roguelike-rpg-pack)
 - [Motley Forces Font](https://www.fontspace.com/motley-forces-font-f87817)
 
+## Backend using gradio
 
-
-
-
-
+Available here: https://github.com/KseniaGa/MemoryLane
+please note that it is not yet fully integrated into the project
 
