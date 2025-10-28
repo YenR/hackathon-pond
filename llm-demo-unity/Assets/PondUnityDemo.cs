@@ -3,6 +3,7 @@ using UnityEngine.Networking;
 using TMPro;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 public class PondUnityDemo : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PondUnityDemo : MonoBehaviour
     public TMP_InputField TitleField;
     public TMP_InputField OfferingField;
     public TMP_InputField ReplyField;
-    public TextMeshProUGUI OutputText;
+    public TMP_Text OutputText;
 
     private string baseUrl = "http://127.0.0.1:8000";
     private string sessionId;
@@ -41,6 +42,15 @@ public class PondUnityDemo : MonoBehaviour
         return req.downloadHandler.text;
     }
 
+    public static class TextUtils
+    {
+        public static string StripTags(string input)
+        {
+            if (string.IsNullOrEmpty(input)) return input;
+            return Regex.Replace(input, "<.*?>", "\n");
+        }
+    }
+
     // ---------- buttons ----------
     public async void BeginRitual()
     {
@@ -67,11 +77,11 @@ public class PondUnityDemo : MonoBehaviour
             string html = json.Substring(start, end - start)
                               .Replace("\\n", "\n")
                               .Replace("\\\"", "\"");
-            OutputText.text = html;
+            OutputText.text = TextUtils.StripTags(html);
         }
         else
         {
-            OutputText.text = json;
+            OutputText.text = TextUtils.StripTags(json);
         }
     }
 }
