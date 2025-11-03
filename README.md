@@ -39,4 +39,5 @@ please note that it is not yet fully integrated into the project
 
 ## Video
 
-[![Watch the demo](vid/thumbnail.png)](https://github.com/YenR/hackathon-pond/blob/main/vid/demo.mp4)
+[![Watch the demo](vid/thumbnail.png)](https://github.com/YenR/hackathon-pond/blob/main/vid/pond-demo.mp4)
+
