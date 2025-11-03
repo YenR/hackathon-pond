@@ -5,8 +5,8 @@
 1. **Unity 6.0**  (https://unity.com/download)
    - (alternatively, unzip and run the windows build)
 2. **LM Studio** ([https://lmstudio.ai](https://lmstudio.ai))  
-3. A downloaded model in LM Studio: **gemma-3-4b**
-   - Open LM Studio’s **Discover** tab, find Gemma 3 4B, click **Download**
+3. A downloaded model in LM Studio: **meta-llama-3.1-8b-instruct**
+   - Open LM Studio’s **Discover** tab, find meta-llama-3.1-8b, click **Download**
    - In the **Developer** tab, select the model and click **Start Server**  
    - Note the generated URL (default: `http://127.0.0.1:1234/v1/completions`)
 4. **ComfyUI** (https://www.comfy.org/download)
@@ -15,7 +15,7 @@
    - Open ComfyUI's Manager (top right)
    - Click Custom Nodes Manager
    - Search for ComfyUI-BRIA_AI-RMBG and install (restart of ComfyUI required)
-   
+6. For the memory offering function to work, have https://github.com/KseniaGa/MemoryLane running in the background (e.g. uvicorn pond_api:app --host 127.0.0.1 --port 8000 --reload)
    
 ## How to run
 
