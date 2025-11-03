@@ -37,3 +37,6 @@
 Available here: https://github.com/KseniaGa/MemoryLane
 please note that it is not yet fully integrated into the project
 
+## Video
+
+[![Watch the demo](vid/thumbnail.png)](https://github.com/YenR/hackathon-pond/blob/vid/demo.mp4)
