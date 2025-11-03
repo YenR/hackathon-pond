@@ -52,12 +52,16 @@ public class LmStudioChatUI : MonoBehaviour
             inputField.lineType = TMP_InputField.LineType.MultiLineNewline;
 
         if (ComfyImageCtr.avatarSprite != null)
+        {
             playerimg.sprite = ComfyImageCtr.avatarSprite;
+            reflection.sprite = ComfyImageCtr.avatarSprite;
+        }
 
         AddMessageToUI("system", "Welcome. Tell me about your day!");
     }
 
     public Image playerimg;
+    public Image reflection;
 
     public void onPressFinished()
     {

@@ -4,6 +4,7 @@ using TMPro;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using UnityEngine.SceneManagement;
 
 public class PondUnityDemo : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class PondUnityDemo : MonoBehaviour
 
     private string baseUrl = "http://127.0.0.1:8000";
     private string sessionId;
+
+    public string resultString;
+
+    public GameObject loading;
+
+
 
     private void Awake()
     {
@@ -32,7 +39,12 @@ public class PondUnityDemo : MonoBehaviour
         req.SetRequestHeader("Content-Type", "application/json");
 
         var op = req.SendWebRequest();
+
+        loading.SetActive(true);
+
         while (!op.isDone) await Task.Yield();
+
+        loading.SetActive(false);
 
         if (req.result != UnityWebRequest.Result.Success)
         {
@@ -69,6 +81,8 @@ public class PondUnityDemo : MonoBehaviour
 
     private void ShowReply(string json)
     {
+        resultString = OutputText.text;
+
         // crude extraction of "html" field for demo purposes
         int start = json.IndexOf("\"html\":\"") + 8;
         int end = json.IndexOf("\",\"finished\"");
@@ -83,5 +97,30 @@ public class PondUnityDemo : MonoBehaviour
         {
             OutputText.text = TextUtils.StripTags(json);
         }
+
+        Debug.Log(OutputText.text);
+
+        if (OutputText.text.Trim().Equals("The ritual is complete."))
+        {
+            finish();
+        }
+
+    }
+
+
+    private void finish()
+    {
+
+        Debug.Log("finishing. result string: " + resultString);
+
+        LmStudioChatUI.result = resultString;
+
+        Scene newScene = SceneManager.GetSceneByName("gradioAPIChat");
+        if (newScene.isLoaded)
+        {
+            SceneManager.UnloadSceneAsync(newScene);
+        }
+
+        SceneManager.LoadScene("imgGen", LoadSceneMode.Additive);
     }
 }

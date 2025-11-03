@@ -12,7 +12,7 @@ public class UIScript : MonoBehaviour
 
     public Transform pond;
 
-    public Button up, down, delete, create, read;
+    public Button up, down, delete, create, read, talk;
 
     public static UIScript instance;
 
@@ -22,12 +22,26 @@ public class UIScript : MonoBehaviour
 
     public void onPressNewMemory()
     {
+        SceneManager.LoadScene("gradioAPIChat", LoadSceneMode.Additive);
+
+        if (memoryCanvas.instance != null)
+            memoryCanvas.instance.spawnNewMemory();
+
+        cam.gameObject.SetActive(false);
+
+        create.gameObject.SetActive(false);
+        talk.gameObject.SetActive(false);
+        hideUI();
+    }
+
+    public void onPressNewTalk()
+    {
         SceneManager.LoadScene("Dialogue", LoadSceneMode.Additive);
 
         if (memoryCanvas.instance != null)
             memoryCanvas.instance.spawnNewMemory();
 
-        cam.gameObject.SetActive(false); 
+        cam.gameObject.SetActive(false);
     }
 
     public void setNewSprite(Sprite s)

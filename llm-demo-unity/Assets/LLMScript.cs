@@ -14,7 +14,7 @@ public class LLMScript : MonoBehaviour
 
     [Header("LM Studio")]
     public string baseUrl = "http://127.0.0.1:1234";
-    public string model = "google/gemma-3-4b";
+    public string model = "meta-llama-3.1-8b-instruct";
 
     [Header("Generation params")]
     public int maxTokens = 256;
