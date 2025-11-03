@@ -15,7 +15,7 @@
    - Open ComfyUI's Manager (top right)
    - Click Custom Nodes Manager
    - Search for ComfyUI-BRIA_AI-RMBG and install (restart of ComfyUI required)
-6. For the memory offering function to work, have https://github.com/KseniaGa/MemoryLane running in the background (e.g. uvicorn pond_api:app --host 127.0.0.1 --port 8000 --reload)
+6. For the memory offering function to work, have https://github.com/KseniaGa/MemoryLane running in the background (e.g. `uvicorn pond_api:app --host 127.0.0.1 --port 8000 --reload`)
    
 ## How to run
 
